@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://654xicuy3bgm"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_e6c3i"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vbmp1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999355, 0.0329144, -0.0143293, -0.0329854, 0.999445, -0.00474963, 0.014165, 0.00521922, 0.999886, -0.418456, 1.63549, -0.961841)
+mesh = SubResource("SphereMesh_e6c3i")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(6.47011, 0.213097, -0.0927719, -0.213557, 6.47068, -0.0307505, 0.0917082, 0.0337907, 6.47354, 0.0784531, 0.874303, -1.34645)
+mesh = SubResource("PlaneMesh_vbmp1")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(0.996989, -0.0775369, -4.55572e-09, -0.00757166, -0.0973584, 0.995221, -0.0771663, -0.992224, -0.0976524, -1.90626, 5.82857, -1.60712)
+light_color = Color(0.0431373, 0.45098, 1, 1)
+light_energy = 16.0
+spot_range = 6.8959
